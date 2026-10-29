@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Turismo RD | Inicio</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        />
+    </head>
+
+    <body>
+        <header
+            class="relative flex items-center justify-between bg-[#061013] px-8 py-5"
+        >
+            <a
+                href="index.html"
+                class="logo text-white text-2xl font-bold"
+                >Turismo RD</a
+            >
+            <nav
+                aria-label="Navegación principal"
+                class="hidden md:block"
+            >
+                <ul class="flex items-center gap-8">
+                    <li>
+                        <a
+                            href="index.html"
+                            class="text-white hover:text-[#40E0D0] transition-colors"
+                            >Inicio</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="paquetes.html"
+                            class="text-white hover:text-[#40E0D0] transition-colors"
+                            >Paquetes</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                            href="contacto.html"
+                            class="text-white hover:text-[#40E0D0] transition-colors"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <button
+                id="menu-btn"
+                type="button"
+                class="md:hidden text-[#40E0D0] text-3xl"
+                aria-label="Abrir menú"
+                aria-controls="menu-movil"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+            <div
+                id="menu-movil"
+                class="hidden md:hidden absolute top-full left-0 z-50 w-full bg-[#061013] px-8 py-5 text-white shadow-lg"
+            >
+                <a
+                    href="index.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Inicio</a
+                >
+                <a
+                    href="paquetes.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Paquetes</a
+                >
+                <a
+                    href="contacto.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Contacto</a
+                >
+            </div>
+        </header>
+        <main>
+            <section id="inicio">
+                <h1>Vive el paraíso a tu manera</h1>
+                <p>
+                    Explora playas paradisíacas, cultura vibrante y paisajes
+                    impresionantes en el corazón del Caribe.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Turismo RD. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>

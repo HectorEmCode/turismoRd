@@ -6,13 +6,18 @@ Sitio web turistico dedicado a mostrar destinos y paquetes de República Dominic
 
 ## Tecnologías
 - HTML5
+
 - CSS3
+
 - JavaScript
+
 - Git y GitHub
 
 ## Páginas
 - Inicio
+
 - Paquetes Turísticos
+
 - Contacto
 
 ## Autor
