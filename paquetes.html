@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Turismo RD | Paquetes turísticos</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        />
+    </head>
+
+    <body>
+        <header class="relative bg-[#061013]">
+            <div class="container-site flex items-center justify-between py-5">
+                <a
+                    href="index.html"
+                    class="logo text-white text-2xl font-bold"
+                    >Turismo RD</a
+                >
+                <nav
+                    aria-label="Navegación principal"
+                    class="hidden md:block"
+                >
+                    <ul class="flex items-center gap-8">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paquetes.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Paquetes</a
+                            >
+                        </li>
+
+                        <li>
+                            <a
+                                href="contacto.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Contacto</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Botón para cambiar entre modo claro y oscuro -->
+                <button
+                    id="theme-btn"
+                    type="button"
+                    class="ml-auto rounded-lg border border-[#26373B] px-3 py-2 text-xl text-[#40E0D0] transition-colors hover:bg-[#123D43] md:ml-0"
+                    aria-label="Activar modo claro"
+                    aria-pressed="false"
+                >
+                    ☀️
+                </button>
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="md:hidden text-[#40E0D0] text-3xl"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-movil"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+            </div>
+            <div
+                id="menu-movil"
+                class="hidden md:hidden absolute top-full left-0 z-50 w-full bg-[#061013] px-8 py-5 text-white shadow-lg"
+            >
+                <a
+                    href="index.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Inicio</a
+                >
+                <a
+                    href="paquetes.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Paquetes</a
+                >
+                <a
+                    href="contacto.html"
+                    class="block py-3 hover:text-[#40E0D0]"
+                    >Contacto</a
+                >
+            </div>
+        </header>
+        <main>
+            <section
+                id="presentacion"
+                class="bg-[#061013] py-16 lg:py-24"
+            >
+                <div class="container-site">
+                    <p class="mb-3 font-semibold text-[#40E0D0]">
+                        DESCUBRE REPÚBLICA DOMINICANA
+                    </p>
+
+                    <h1
+                        class="max-w-3xl text-4xl font-bold text-white md:text-5xl"
+                    >
+                        Explora nuestros paquetes turísticos
+                    </h1>
+
+                    <p class="mt-5 max-w-2xl leading-relaxed text-[#B8CBCE]">
+                        Desde playas paradisíacas hasta ciudades llenas de
+                        historia. Encuentra una experiencia que se adapte a tu
+                        forma de viajar.
+                    </p>
+                </div>
+            </section>
+
+            <section
+                id="paquetes"
+                class="bg-[#0B171A] py-16 lg:py-24"
+            >
+                <div class="container-site">
+                    <h2 class="mb-10 text-3xl font-bold text-white md:text-4xl">
+                        Paquetes destacados
+                    </h2>
+
+                    <div
+                        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+                    >
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/punta-cana.webp"
+                                alt="Playa de arena blanca en Punta Cana"
+                                class="aspect-[4/3] w-full object-cover"
+                            />
+
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Escapada a Punta Cana
+                                </h3>
+
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Disfruta de playas paradisíacas y momentos
+                                    de descanso en el Caribe dominicano.
+                                </p>
+                                <p class="mt-5 text-sm text-[#B8CBCE]">
+                                    Precio ilustrativo por persona
+                                </p>
+
+                                <p
+                                    class="mt-1 text-2xl font-bold text-[#40E0D0]"
+                                >
+                                    RD$18,500
+                                </p>
+
+                                <a
+                                    href="contacto.html"
+                                    class="mt-5 inline-block font-semibold text-[#40E0D0] transition-colors hover:text-white"
+                                >
+                                    Solicitar información
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/samana.webp"
+                                alt="Paisaje natural tropical de Samaná"
+                                class="aspect-[4/3] w-full object-cover"
+                            />
+
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Aventura en Samaná
+                                </h3>
+
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Explora cascadas, playas y paisajes
+                                    naturales en uno de los destinos más
+                                    impresionantes del país.
+                                </p>
+                                <p class="mt-5 text-sm text-[#B8CBCE]">
+                                    Precio ilustrativo por persona
+                                </p>
+
+                                <p
+                                    class="mt-1 text-2xl font-bold text-[#40E0D0]"
+                                >
+                                    RD$24,990
+                                </p>
+
+                                <a
+                                    href="contacto.html"
+                                    class="mt-5 inline-block font-semibold text-[#40E0D0] transition-colors hover:text-white"
+                                >
+                                    Solicitar información
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/santo-domingo.webp"
+                                alt="Edificios históricos de la Zona Colonial de Santo Domingo"
+                                class="aspect-[4/3] w-full object-cover"
+                            />
+
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Descubre Santo Domingo
+                                </h3>
+
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Recorre la Ciudad Colonial y conoce la
+                                    historia, arquitectura y cultura de la
+                                    capital dominicana.
+                                </p>
+                                <p class="mt-5 text-sm text-[#B8CBCE]">
+                                    Precio ilustrativo por persona
+                                </p>
+
+                                <p
+                                    class="mt-1 text-2xl font-bold text-[#40E0D0]"
+                                >
+                                    RD$7,490
+                                </p>
+
+                                <a
+                                    href="contacto.html"
+                                    class="mt-5 inline-block font-semibold text-[#40E0D0] transition-colors hover:text-white"
+                                >
+                                    Solicitar información
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="comparativa"
+                class="bg-[#061013] py-16 lg:py-24"
+            >
+                <div class="container-site">
+                    <h2 class="mb-4 text-3xl font-bold text-white md:text-4xl">
+                        Compara nuestras experiencias
+                    </h2>
+
+                    <p class="mb-8 max-w-2xl text-[#B8CBCE]">
+                        Conoce las características de cada propuesta y encuentra
+                        la experiencia ideal para ti.
+                    </p>
+                    <div
+                        class="overflow-x-auto rounded-xl border border-[#26373B]"
+                    >
+                        <table
+                            class="w-full min-w-[650px] text-left text-[#B8CBCE]"
+                        >
+                            <thead class="bg-[#123D43] text-white">
+                                <tr>
+                                    <th
+                                        scope="col"
+                                        class="p-4"
+                                    >
+                                        Destino
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        class="p-4"
+                                    >
+                                        Experiencia
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        class="p-4"
+                                    >
+                                        Duración sugerida
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        class="p-4"
+                                    >
+                                        Precio estimado
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody
+                                class="divide-y divide-[#26373B] bg-[#101C20]"
+                            >
+                                <tr
+                                    class="transition-colors hover:bg-[#1A2B30]"
+                                >
+                                    <th
+                                        scope="row"
+                                        class="p-4 font-semibold text-white"
+                                    >
+                                        Punta Cana
+                                    </th>
+                                    <td class="p-4">Playas y descanso</td>
+                                    <td class="p-4">3 días / 2 noches</td>
+                                    <td
+                                        class="p-4 font-semibold text-[#40E0D0]"
+                                    >
+                                        RD$18,500
+                                    </td>
+                                </tr>
+
+                                <tr
+                                    class="transition-colors hover:bg-[#1A2B30]"
+                                >
+                                    <th
+                                        scope="row"
+                                        class="p-4 font-semibold text-white"
+                                    >
+                                        Samaná
+                                    </th>
+                                    <td class="p-4">Naturaleza y aventura</td>
+                                    <td class="p-4">4 días / 3 noches</td>
+                                    <td
+                                        class="p-4 font-semibold text-[#40E0D0]"
+                                    >
+                                        RD$24,900
+                                    </td>
+                                </tr>
+
+                                <tr
+                                    class="transition-colors hover:bg-[#1A2B30]"
+                                >
+                                    <th
+                                        scope="row"
+                                        class="p-4 font-semibold text-white"
+                                    >
+                                        Santo Domingo
+                                    </th>
+                                    <td class="p-4">Historia y cultura</td>
+                                    <td class="p-4">2 días / 1 noche</td>
+                                    <td
+                                        class="p-4 font-semibold text-[#40E0D0]"
+                                    >
+                                        RD$9,500
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="mt-4 text-sm text-[#B8CBCE]">
+                        * Precios ilustrativos por persona, utilizados
+                        únicamente con fines académicos. No representan ofertas
+                        ni disponibilidad confirmada.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-[#061013] border-t border-[#26373B] py-8">
+            <div class="container-site">
+                <nav aria-label="Navegación del pie de página">
+                    <ul class="mb-6 flex flex-wrap justify-center gap-6">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="paquetes.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Paquetes
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="contacto.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="text-center text-sm text-[#B8CBCE]">
+                    &copy; 2026 Turismo RD. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>

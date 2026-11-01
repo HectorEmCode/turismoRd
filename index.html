@@ -7,6 +7,20 @@
             content="width=device-width, initial-scale=1.0"
         />
         <title>Turismo RD | Inicio</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link
             rel="stylesheet"
@@ -15,53 +29,63 @@
     </head>
 
     <body>
-        <header
-            class="relative flex items-center justify-between bg-[#061013] px-8 py-5"
-        >
-            <a
-                href="index.html"
-                class="logo text-white text-2xl font-bold"
-                >Turismo RD</a
-            >
-            <nav
-                aria-label="Navegación principal"
-                class="hidden md:block"
-            >
-                <ul class="flex items-center gap-8">
-                    <li>
-                        <a
-                            href="index.html"
-                            class="text-white hover:text-[#40E0D0] transition-colors"
-                            >Inicio</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="paquetes.html"
-                            class="text-white hover:text-[#40E0D0] transition-colors"
-                            >Paquetes</a
-                        >
-                    </li>
+        <header class="relative bg-[#061013]">
+            <div class="container-site flex items-center justify-between py-5">
+                <a
+                    href="index.html"
+                    class="logo text-white text-2xl font-bold"
+                    >Turismo RD</a
+                >
+                <nav
+                    aria-label="Navegación principal"
+                    class="hidden md:block"
+                >
+                    <ul class="flex items-center gap-8">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paquetes.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Paquetes</a
+                            >
+                        </li>
 
-                    <li>
-                        <a
-                            href="contacto.html"
-                            class="text-white hover:text-[#40E0D0] transition-colors"
-                            >Contacto</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-            <button
-                id="menu-btn"
-                type="button"
-                class="md:hidden text-[#40E0D0] text-3xl"
-                aria-label="Abrir menú"
-                aria-controls="menu-movil"
-                aria-expanded="false"
-            >
-                ☰
-            </button>
+                        <li>
+                            <a
+                                href="contacto.html"
+                                class="text-white hover:text-[#40E0D0] transition-colors"
+                                >Contacto</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Botón para cambiar entre modo claro y oscuro -->
+                <button
+                    id="theme-btn"
+                    type="button"
+                    class="ml-auto rounded-lg border border-[#26373B] px-3 py-2 text-xl text-[#40E0D0] transition-colors hover:bg-[#123D43] md:ml-0"
+                    aria-label="Activar modo claro"
+                    aria-pressed="false"
+                >
+                    ☀️
+                </button>
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="md:hidden text-[#40E0D0] text-3xl"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-movil"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+            </div>
             <div
                 id="menu-movil"
                 class="hidden md:hidden absolute top-full left-0 z-50 w-full bg-[#061013] px-8 py-5 text-white shadow-lg"
@@ -86,113 +110,261 @@
         <main>
             <section
                 id="inicio"
-                class="bg-[#061013] px-6 py-20 relative overflow-hidden"
+                class="relative overflow-hidden bg-[#061013] py-20 lg:py-32"
             >
-                <img
-                    src="img/hero-saona.webp"
-                    alt="Playa caribeña de Isla Saona con arena blanca, palmeras y mar turquesa"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
-                <div
-                    class="absolute inset-0 bg-linear-to-r from-[#061013]/95 via-[#061013]/85 to-[#061013]/65 lg:from-[#061013] lg:via-[#061013]/80 lg:to-transparent"
-                    aria-hidden="true"
-                ></div>
-                <div class="relative z-10 max-w-2xl mx-auto lg:mx-0">
-                    <h1
-                        class="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
-                    >
-                        Vive el paraíso
-                        <span class="text-[#40E0D0]">a tu manera</span>
-                    </h1>
-                    <p
-                        class="text-[#B8CBCE] text-base md:text-lg max-w-xl mt-6 leading-relaxed"
-                    >
-                        Explora playas paradisíacas, cultura vibrante y paisajes
-                        impresionantes en el corazón del Caribe.
-                    </p>
+                <div class="container-site">
+                    <img
+                        src="img/hero-saona.webp"
+                        alt="Playa caribeña de Isla Saona con arena blanca, palmeras y mar turquesa"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
                     <div
-                        class="flex flex-col items-stretch sm:flex-row sm:items-start gap-4 mt-8"
-                    >
-                        <a
-                            href="paquetes.html"
-                            class="btn-primario inline-block bg-[#40E0D0] text-[#061013] font-semibold px-6 py-3 rounded-lg hover:bg-[#2BC4B5] transition-colors text-center"
-                            >Ver Paquetes</a
+                        class="absolute inset-0 bg-linear-to-r from-[#061013]/95 via-[#061013]/85 to-[#061013]/65 lg:from-[#061013] lg:via-[#061013]/80 lg:to-transparent"
+                        aria-hidden="true"
+                    ></div>
+                    <div class="relative z-10 max-w-2xl mx-auto lg:mx-0">
+                        <h1
+                            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
                         >
-                        <a
-                            href="contacto.html"
-                            class="btn-secundario inline-block border border-[#40E0D0] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#40E0D0] hover:text-[#061013] transition-colors text-center"
-                            >Contáctanos</a
+                            Vive el paraíso
+                            <span class="text-[#40E0D0]">a tu manera</span>
+                        </h1>
+                        <p
+                            class="text-[#B8CBCE] text-base md:text-lg max-w-xl mt-6 leading-relaxed"
                         >
+                            Explora playas paradisíacas, cultura vibrante y
+                            paisajes impresionantes en el corazón del Caribe.
+                        </p>
+                        <div
+                            class="flex flex-col items-stretch sm:flex-row sm:items-start gap-4 mt-8"
+                        >
+                            <a
+                                href="paquetes.html"
+                                class="btn-primario inline-block bg-[#40E0D0] text-[#061013] font-semibold px-6 py-3 rounded-lg hover:bg-[#2BC4B5] transition-colors text-center"
+                                >Ver Paquetes</a
+                            >
+                            <a
+                                href="contacto.html"
+                                class="btn-secundario inline-block border border-[#40E0D0] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#40E0D0] hover:text-[#061013] transition-colors text-center"
+                                >Contáctanos</a
+                            >
+                        </div>
                     </div>
                 </div>
             </section>
             <section
-    id="destinos"
-    class="bg-[#061013] px-6 py-16 lg:px-8 lg:py-24"
->
-    <h2 class="mb-10 text-3xl font-bold text-white md:text-4xl">
-        Destinos destacados
-    </h2>
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                >
-                    <article
-                        class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                id="destinos"
+                class="bg-[#061013] py-16 lg:py-24"
+            >
+                <div class="container-site">
+                    <h2 class="mb-10 text-3xl font-bold text-white md:text-4xl">
+                        Destinos destacados
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                     >
-                        <img
-                            src="img/punta-cana.webp"
-                            alt="Playa de Punta Cana"
-                           class="w-full aspect-[4/3] object-cover"
-                        />
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white">
-                                Punta Cana
-                            <p class="mt-3 text-[#B8CBCE]">
-                                Disfruta de playas de arena blanca y resorts de
-                                lujo.
-                            </p>
-                        
-                        <a href="paquetes.html"class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors">Saber más</a></div>
-                    </article>
-                    <article
-                        class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/punta-cana.webp"
+                                alt="Playa de Punta Cana"
+                                class="w-full aspect-[4/3] object-cover"
+                            />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Punta Cana
+                                </h3>
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Disfruta de playas de arena blanca y resorts
+                                    de lujo.
+                                </p>
+
+                                <a
+                                    href="paquetes.html"
+                                    class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors"
+                                    >Saber más</a
+                                >
+                            </div>
+                        </article>
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/santo-domingo.webp"
+                                alt="Arquitectura colonial de Santo Domingo"
+                                class="w-full aspect-[4/3] object-cover"
+                            />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Santo Domingo
+                                </h3>
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Descubre la historia, cultura y arquitectura
+                                    de la primera ciudad europea permanente de
+                                    América.
+                                </p>
+
+                                <a
+                                    href="paquetes.html"
+                                    class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors"
+                                    >Saber más</a
+                                >
+                            </div>
+                        </article>
+                        <article
+                            class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        >
+                            <img
+                                src="img/samana.webp"
+                                alt="Cascada rodeada de vegetación tropical en Samaná"
+                                class="w-full aspect-[4/3] object-cover"
+                            />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">
+                                    Samaná
+                                </h3>
+                                <p class="mt-3 text-[#B8CBCE]">
+                                    Descubre cascadas, playas paradisíacas y
+                                    paisajes naturales inolvidables.
+                                </p>
+
+                                <a
+                                    href="paquetes.html"
+                                    class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors"
+                                    >Saber más</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="experiencias"
+                class="bg-[#0B171A] py-16 lg:py-24"
+            >
+                <div class="container-site">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        Experiencias inolvidables
+                    </h2>
+                    <p class="mt-4 mb-10 max-w-2xl text-[#B8CBCE]">
+                        Mucho más que playas: descubre las aventuras que te
+                        esperan.
+                    </p>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                     >
-                        <img
-    src="img/santo-domingo.webp"
-    alt="Arquitectura colonial de Santo Domingo"
-    class="w-full aspect-[4/3] object-cover"
-/>
-                        <div class="p-6">
+                        <article
+                            class="rounded-xl border border-[#26373B] bg-[#101C20] p-6"
+                        >
+                            <span
+                                class="mb-4 inline-block text-4xl"
+                                aria-hidden="true"
+                            >
+                                🌊
+                            </span>
                             <h3 class="text-xl font-bold text-white">
-                                Santo Domingo
-                            <p class="mt-3 text-[#B8CBCE]">
-                                Descubre la historia, cultura y arquitectura de la primera ciudad europea permanente de América.
+                                Aventuras acuáticas
+                            </h3>
+                            <p class="mt-3 leading-relaxed text-[#B8CBCE]">
+                                Explora las aguas cristalinas del Caribe con
+                                actividades como snorkel, buceo y paseos en
+                                catamarán.
                             </p>
-                        
-                        <a href="paquetes.html"class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors">Saber más</a></div>
-                    </article>
-                    <article
-                        class="overflow-hidden rounded-xl border border-[#26373B] bg-[#101C20]"
+                        </article>
+                        <article
+                            class="rounded-xl border border-[#26373B] bg-[#101C20] p-6"
+                        >
+                            <span
+                                class="mb-4 inline-block text-4xl"
+                                aria-hidden="true"
+                            >
+                                🏞️
+                            </span>
+                            <h3 class="text-xl font-bold text-white">
+                                Naturaleza y aventura
+                            </h3>
+                            <p class="mt-3 leading-relaxed text-[#B8CBCE]">
+                                Descubre montañas, cascadas y senderos rodeados
+                                de paisajes tropicales.
+                            </p>
+                        </article>
+                        <article
+                            class="rounded-xl border border-[#26373B] bg-[#101C20] p-6"
+                        >
+                            <span
+                                class="mb-4 inline-block text-4xl"
+                                aria-hidden="true"
+                            >
+                                🎶
+                            </span>
+                            <h3 class="text-xl font-bold text-white">
+                                Cultura y tradiciones
+                            </h3>
+                            <p class="mt-3 leading-relaxed text-[#B8CBCE]">
+                                Conoce nuestra historia, gastronomía, música y
+                                las tradiciones que hacen única a República
+                                Dominicana.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="planifica"
+                class="bg-[#123D43] py-16 lg:py-24"
+            >
+                <div class="container-site text-center">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        Planifica tu viaje
+                    </h2>
+                    <p class="mx-auto mt-4 max-w-2xl text-[#B8CBCE]">
+                        Descubre República Dominicana y encuentra la experiencia
+                        ideal para ti.
+                    </p>
+                    <a
+                        href="contacto.html"
+                        class="mt-8 inline-block rounded-lg bg-[#40E0D0] px-8 py-3 font-semibold text-[#061013] transition-colors hover:bg-[#2BC4B5]"
                     >
-                        <img
-    src="img/samana.webp"
-    alt="Cascada rodeada de vegetación tropical en Samaná"
-    class="w-full aspect-[4/3] object-cover"
-/>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white">
-                                Samaná
-                            <p class="mt-3 text-[#B8CBCE]">
-                                Descubre cascadas, playas paradisíacas y paisajes naturales inolvidables.
-                            </p>
-                        
-                        <a href="paquetes.html"class="mt-4 inline-block font-semibold text-[#40E0D0] hover:text-white transition-colors">Saber más</a></div>
-                    </article>
+                        Planificar mi viaje
+                    </a>
                 </div>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2026 Turismo RD. Todos los derechos reservados.</p>
+        <footer class="bg-[#061013] border-t border-[#26373B] py-8">
+            <div class="container-site">
+                <nav aria-label="Navegación del pie de página">
+                    <ul class="mb-6 flex flex-wrap justify-center gap-6">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="paquetes.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Paquetes
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="contacto.html"
+                                class="text-[#B8CBCE] transition-colors hover:text-[#40E0D0]"
+                            >
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="text-center text-sm text-[#B8CBCE]">
+                    &copy; 2026 Turismo RD. Todos los derechos reservados.
+                </p>
+            </div>
         </footer>
 
         <script src="js/app.js"></script>

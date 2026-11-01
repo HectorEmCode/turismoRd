@@ -1,0 +1,140 @@
+/* ==========================================
+   TURISMO RD
+   Archivo: css/style.css
+   Estilos personalizados del sitio
+========================================== */
+
+/* Modelo de caja */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Contenedor principal reutilizable del sitio */
+.container-site {
+    width: min(100% - 3rem, 1280px);
+    margin-inline: auto;
+}
+
+/* Tipografía principal del sitio */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Tipografía para los encabezados */
+h1,
+h2,
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Contenedor principal reutilizable del sitio */
+.container-site {
+    width: min(100% - 3rem, 1280px);
+    margin-inline: auto;
+}
+
+/* Tipografía principal del sitio */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Tipografía para los encabezados */
+h1,
+h2,
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* ==========================================
+   MODO CLARO Y OSCURO
+========================================== */
+
+/* Colores generales del tema claro */
+html[data-theme="light"] {
+    color-scheme: light;
+
+    --tema-fondo: #f5fafa;
+    --tema-alternativo: #eaf3f3;
+    --tema-tarjeta: #ffffff;
+    --tema-texto: #132d33;
+    --tema-secundario: #49646b;
+    --tema-borde: #d1e2e4;
+    --tema-acento: #087f77;
+}
+
+html[data-theme="light"] body {
+    background-color: var(--tema-fondo);
+    color: var(--tema-texto);
+}
+
+/* Fondos principales */
+html[data-theme="light"] [class~="bg-[#061013]"] {
+    background-color: var(--tema-fondo);
+}
+
+html[data-theme="light"] [class~="bg-[#0B171A]"] {
+    background-color: var(--tema-alternativo);
+}
+
+/* Tarjetas y formulario */
+html[data-theme="light"] [class~="bg-[#101C20]"] {
+    background-color: var(--tema-tarjeta);
+}
+
+/* Fondo de la llamada a la acción */
+html[data-theme="light"] [class~="bg-[#123D43]"] {
+    background-color: #ddf3f0;
+}
+
+/* Títulos y textos */
+html[data-theme="light"] [class~="text-white"] {
+    color: var(--tema-texto);
+}
+
+html[data-theme="light"] [class~="text-[#B8CBCE]"] {
+    color: var(--tema-secundario);
+}
+
+/* Texto turquesa con mayor contraste */
+html[data-theme="light"] [class~="text-[#40E0D0]"] {
+    color: var(--tema-acento);
+}
+
+/* Bordes */
+html[data-theme="light"] [class~="border-[#26373B]"] {
+    border-color: var(--tema-borde);
+}
+
+html[data-theme="light"] tbody.divide-y > tr {
+    border-color: var(--tema-borde);
+}
+
+/* Hover de enlaces en el modo claro */
+html[data-theme="light"] [class~="hover:text-white"]:hover {
+    color: var(--tema-acento);
+}
+
+html[data-theme="light"] [class~="hover:text-[#40E0D0]"]:hover {
+    color: var(--tema-acento);
+}
+
+/* El Hero conserva el contraste sobre su fotografía oscura */
+html[data-theme="light"] #inicio [class~="text-white"] {
+    color: #ffffff;
+}
+
+html[data-theme="light"] #inicio [class~="text-[#B8CBCE]"] {
+    color: #d7e5e7;
+}
+
+html[data-theme="light"] #inicio [class~="text-[#40E0D0]"] {
+    color: #40e0d0;
+}
+
+/* Campos del formulario */
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder {
+    color: #637d82;
+}
